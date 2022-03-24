@@ -1,0 +1,206 @@
+.dashboard-container{
+  min-height: calc(100vh - 173px);
+}
+.dashboard-containerBox {
+    min-height: calc(100vh - 119px);
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    //padding-bottom: 54px;
+}
+
+.filter-container {
+    padding: 20px;
+    background-color: #fff;
+    height: 88px;
+    padding-top: 25px;
+    .filter-item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 10px;
+        .el-input__inner {
+            width: 300px;
+        }
+    }
+}
+.el-button--primary{
+  background-color: #3d6fd7;
+  border-radius: 3px;
+  border-color: #3d6fd7;
+}
+
+.partBox {
+    height: 500px;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    color: #303947;
+}
+.lineStep{
+  width: 3px;
+  height: 16px;
+  background-color: #5e6268;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.main{
+  background-color: inherit;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  min-height: calc(100vh - 73px);
+  .containerLeft{
+    width: 287px;
+    //border: solid 1px #a9c4df;
+    margin-right: 10px;
+    overflow: hidden;
+    //padding: 15px;
+    //flex:1;
+    background-color: #fff;
+    .leftNav{
+      background-color: #3d6fd7;
+      height: 60px;
+      line-height: 60px;
+      padding-left: 16px;
+      color: #fff;
+      .lineStep{
+        background-color: #fff;
+      }
+    }
+  }
+  .containerRight{
+    //width: 35%;
+    //border: solid 1px #a9c4df;
+    overflow: auto;
+    flex: 1;
+    //padding: 15px;
+    //background-color: #fff;
+  }
+}
+.muList{
+  margin: 16px;
+  border: solid 1px #dadfe5;
+  height: 90%;
+  ul{
+    padding: 10px;
+    margin-top: 0;
+  }
+   li{
+     list-style: none;
+     font-size: 16px;
+     color: #373737;
+     //padding: 6px 0;
+     cursor: pointer;
+     height: 45px;
+     line-height: 45px;
+     border-bottom: 1px solid #dadfe5;
+     .borderIcon{
+       width: 4px;
+       height: 4px;
+       background-color: #dadfe5;
+       display: inline-block;
+       border-radius: 100%;
+       margin-right: 8px;
+       margin-top: -10px;
+     }
+     .mlNum{
+       float: right;
+       margin-right: 10px;
+     }
+     &:last-child{
+       border-bottom: none;
+     }
+   }
+}
+
+.baseTitle {
+    color: #393939;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}
+
+.detailInfo {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #b6bcc4;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    .listLeft {
+        width: 100px;
+        padding-right: 20px;
+        img {
+            width: 75px;
+        }
+    }
+    .listRight {
+        flex: 1;
+        .InterfaceIntro {
+            font-size: 16px;
+            color: #666;
+            line-height: 24px;
+            padding-bottom: 10px;
+            span {
+                &:first-child {
+                    font-weight: bold;
+                    color: #333;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+.fjList {
+    margin-left: 28px;
+    .fjTitle {
+        color: #333333;
+        font-size: 18px;
+        padding: 18px 0;
+        border-bottom: 1px dashed #b6bcc4;
+        span {
+            &:nth-child(2) {
+                color: #4f77aa;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+.subTitle {
+    font-size: 18px;
+    color: #303947;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.backBtn {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 1000;
+    .colorPlain {
+        color: #3d6fd7;
+        background: #fff;
+        border-color: #3d6fd7;
+    }
+}
+.filter-container-ml{
+  height: 78px;
+  padding-top: 23px;
+}
+.filter-container-ml .filter-item .el-input__inner{
+  width: 400px;
+}
